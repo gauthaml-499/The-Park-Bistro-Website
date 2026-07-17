@@ -1,0 +1,19 @@
+# Never commit your API key
+.env
+.env.*
+
+# OS / editor cruft
+.DS_Store
+
+# scratch
+_fontcompare.html
+
+# raw photo dumps — not used by the site, originals live outside the repo
+/Bistro Food /
+/Park Bistro Photos/
+
+# editor / tooling — not part of the deployed site
+.claude/
+.agents/
+.impeccable/
+skills-lock.json

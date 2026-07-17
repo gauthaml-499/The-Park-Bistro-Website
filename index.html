@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Park Bistro — A seasonal table at the edge of the reserve</title>
+  <meta name="description" content="The Park Bistro is a seasonal, produce-driven bistro beside Attenborough Nature Reserve. Warm rooms, an open kitchen, and a menu that turns with the woods." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Yellowtail&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#menu">Skip to menu</a>
+
+  <!-- ░░ Section index rail (desktop) ░░ -->
+  <nav class="rail" aria-label="Section index">
+    <a href="#story" data-rail><span class="rail__leaf" aria-hidden="true">❧</span><span class="rail__label">The Table</span></a>
+    <a href="#menu" data-rail><span class="rail__leaf" aria-hidden="true">❧</span><span class="rail__label">The Menu</span></a>
+  </nav>
+
+  <!-- ░░ Header ░░ -->
+  <header class="site-head" id="top">
+    <a class="brand" href="#top" aria-label="The Park Bistro, home">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 21c0-6 0-9 0-12" />
+          <path d="M12 12c4-1 6-4 6-8-4 0-6 3-6 8Z" />
+          <path d="M12 15c-3-.8-4.6-3-4.6-6C10.4 9 12 11.2 12 15Z" />
+        </svg>
+      </span>
+      <span class="brand__word">The Park Bistro</span>
+    </a>
+
+    <nav class="site-nav" aria-label="Primary">
+      <a href="#story">Our Story</a>
+      <a href="#menu">Menu</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <!-- mobile nav -->
+  <div class="mobile-nav" id="mobile-nav" hidden>
+    <a href="#story">Our Story</a>
+    <a href="#menu">Menu</a>
+    <a href="contact.html">Contact</a>
+    <a class="mobile-nav__call" href="tel:+447795574768">Call 07795 574768</a>
+  </div>
+
+  <main>
+    <!-- ░░ Hero ░░ -->
+    <section class="hero" aria-label="Introduction">
+      <div class="hero__stripes" aria-hidden="true"></div>
+      <div class="hero__glow" aria-hidden="true"></div>
+
+      <div class="hero__inner">
+        <h1 class="logo-badge" aria-label="The Park Bistro — The Secret Conker">
+          <svg class="logo-badge__art" viewBox="0 0 360 300" role="img" aria-hidden="true">
+            <text class="lg-park lg-park--the" x="180" y="42" text-anchor="middle">THE</text>
+            <text class="lg-park" x="180" y="76" text-anchor="middle">PARK</text>
+            <text class="lg-script" x="182" y="188" text-anchor="middle">Bistro</text>
+            <path class="lg-swash" d="M64 214 Q180 256 296 214" fill="none" stroke-linecap="round" />
+            <text class="lg-sub" x="180" y="256" text-anchor="middle">THE SECRET CONKER</text>
+          </svg>
+        </h1>
+
+        <p class="hero__tagline">A seasonal table at the edge of the reserve</p>
+
+        <div class="hero__actions">
+          <a class="btn btn--solid" href="#menu">Read the menu</a>
+          <a class="btn btn--ghost" href="contact.html">Find us &amp; hours</a>
+        </div>
+      </div>
+
+      <a class="hero__cue" href="#story" aria-label="Scroll to story">
+        <span>Wander in</span>
+        <svg viewBox="0 0 12 30" width="12" height="30" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round">
+          <path d="M6 0v24" /><path d="M1.5 19.5 6 24l4.5-4.5" />
+        </svg>
+      </a>
+    </section>
+
+    <!-- ░░ Reviews (sliding banner) ░░ -->
+    <section class="reviews" aria-label="Reviews">
+      <header class="reviews__head">
+        <p class="eyebrow reveal"><span class="mono">✦</span> Kind words</p>
+        <h2 class="reveal">Loved by the neighbourhood</h2>
+        <a
+          class="reviews__rating reveal"
+          data-reviews-summary
+          href="https://maps.app.goo.gl/GTFs6DnJ6GR6g4HW9"
+          target="_blank"
+          rel="noopener"
+        >
+          <svg class="reviews__g" viewBox="0 0 48 48" width="18" height="18" aria-hidden="true">
+            <path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/>
+            <path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/>
+            <path fill="#FBBC05" d="M11.69 28.18A13.9 13.9 0 0 1 10.94 24c0-1.45.25-2.87.69-4.18v-5.7H4.34A21.93 21.93 0 0 0 2 24c0 3.55.85 6.91 2.34 9.88z"/>
+            <path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/>
+          </svg>
+          <span class="reviews__stars" aria-hidden="true">★★★★★</span>
+          <span class="reviews__score">4.8</span>
+          <span class="reviews__count">· from Google reviews</span>
+          <span class="reviews__arrow" aria-hidden="true">→</span>
+        </a>
+      </header>
+
+      <div class="reviews__viewport">
+        <button
+          type="button"
+          class="reviews__pause"
+          data-reviews-pause
+          aria-pressed="false"
+          aria-label="Pause the scrolling reviews"
+        >
+          <svg class="reviews__pause-icon" data-icon="pause" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true">
+            <rect x="3" y="2" width="3.4" height="12" rx="1" fill="currentColor" />
+            <rect x="9.6" y="2" width="3.4" height="12" rx="1" fill="currentColor" />
+          </svg>
+          <svg class="reviews__pause-icon" data-icon="play" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true">
+            <path d="M4 2.5v11l10-5.5z" fill="currentColor" />
+          </svg>
+        </button>
+        <div class="reviews__track" data-reviews-track aria-live="off">
+          <!-- cards injected by main.js from reviews.data.js -->
+        </div>
+      </div>
+
+      <p class="reviews__attrib">Reviews sourced from Google.</p>
+    </section>
+
+    <!-- ░░ Story ░░ -->
+    <section class="story" id="story">
+      <div class="story__media reveal">
+        <img class="story__media-main" src="assets/images/table_spread.jpg" alt="A table set for lunch: a big salad, toasted bread, pâté and chutney, and crisps" />
+        <img class="story__media-accent" src="assets/images/rocky_road.jpg" alt="A thick slice of rocky road topped with mini eggs and marshmallows" />
+        <figcaption class="story__cap"><span class="mono">Fig. 1</span> Lunch for two, and pudding after</figcaption>
+      </div>
+
+      <div class="story__body">
+        <p class="eyebrow reveal"><span class="eyebrow__leaf" aria-hidden="true">❧</span> The Table</p>
+        <h2 class="reveal">Good food, no fuss.</h2>
+        <p class="reveal">
+          Lunch here is usually a big bowl of salad piled high with whatever's fresh, a
+          board of pâté with toast and a good chutney, or something sweet if you've saved
+          room. Nothing complicated — just done properly, and in portions that don't
+          leave you hungry.
+        </p>
+        <p class="reveal">
+          The room's nothing to write home about, if we're honest, but it's warm and easy,
+          and nobody's going to rush you out if you're still finishing your coffee an hour
+          later.
+        </p>
+        <p class="reveal">
+          Regulars still call us <em>the secret conker</em> — a nod to the old horse
+          chestnut by the back door that half the town used as a landmark long before we
+          ever put up a sign.
+        </p>
+      </div>
+    </section>
+
+    <!-- ░░ Menu ░░ -->
+    <section class="menu" id="menu">
+      <header class="menu__head">
+        <p class="eyebrow reveal"><span class="eyebrow__leaf" aria-hidden="true">❧</span> The Menu</p>
+        <h2 class="reveal">What's on today</h2>
+        <p class="menu__note reveal">
+          Coffee, cream teas, and a short list of things worth ordering. Ask about
+          today's cake — the stand changes daily.
+        </p>
+      </header>
+
+      <div class="menu__grid">
+        <!-- Drinks -->
+        <div class="course reveal">
+          <h3 class="course__title">Drinks</h3>
+          <ul class="dishes">
+            <li class="dish">
+              <div class="dish__row">
+                <span class="dish__name">Flat White Coffee</span>
+                <span class="dish__lead"></span>
+                <span class="dish__price">3.20</span>
+              </div>
+              <p class="dish__desc">Double shot, steamed milk, tight foam.</p>
+            </li>
+            <li class="dish">
+              <div class="dish__row">
+                <span class="dish__name">Iced Caramel Latte</span>
+                <span class="dish__lead"></span>
+                <span class="dish__price">3.80</span>
+              </div>
+              <p class="dish__desc">Served over ice, with a biscuit on the side.</p>
+            </li>
+            <li class="dish">
+              <div class="dish__row">
+                <span class="dish__name">Pot of Breakfast Tea</span>
+                <span class="dish__lead"></span>
+                <span class="dish__price">2.60</span>
+              </div>
+              <p class="dish__desc">A proper pot for one, milk on the side.</p>
+            </li>
+            <li class="dish">
+              <div class="dish__row">
+                <span class="dish__name">Fresh Orange Juice</span>
+                <span class="dish__lead"></span>
+                <span class="dish__price">3.00</span>
+              </div>
+              <p class="dish__desc">Pressed to order.</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Food -->
+        <div class="course reveal">
+          <h3 class="course__title">Food</h3>
+          <ul class="dishes">
+            <li class="dish">
+              <div class="dish__row">
+                <span class="dish__name">Beef &amp; Horseradish Wrap</span>
+                <span class="dish__lead"></span>
+                <span class="dish__price">7.50</span>
+              </div>
+              <p class="dish__desc">Served with crisps and a side salad.</p>
+            </li>
+            <li class="dish">
+              <div class="dish__row">
+                <span class="dish__name">Ham &amp; Cheese Toastie</span>
+                <span class="dish__lead"></span>
+                <span class="dish__price">6.50</span>
+              </div>
+              <p class="dish__desc">Thick-cut ham, mature cheddar, toasted to order.</p>
+            </li>
+            <li class="dish">
+              <div class="dish__row">
+                <span class="dish__name">Soup of the Day</span>
+                <span class="dish__lead"></span>
+                <span class="dish__price">5.50</span>
+              </div>
+              <p class="dish__desc">Ask what's in the pot today — served with warm bread.</p>
+            </li>
+            <li class="dish">
+              <div class="dish__row">
+                <span class="dish__name">Afternoon Tea</span>
+                <span class="dish__lead"></span>
+                <span class="dish__price">14.00</span>
+              </div>
+              <p class="dish__desc">Finger sandwiches, a stand of cakes, and a pot of tea.</p>
+            </li>
+            <li class="dish">
+              <div class="dish__row">
+                <span class="dish__name">Cream Tea</span>
+                <span class="dish__lead"></span>
+                <span class="dish__price">6.90</span>
+              </div>
+              <p class="dish__desc">A pot of tea with a warm scone, jam, and clotted cream.</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Snacks & Sweets -->
+        <div class="course reveal">
+          <h3 class="course__title">Snacks &amp; Sweets</h3>
+          <ul class="dishes">
+            <li class="dish">
+              <div class="dish__row">
+                <span class="dish__name">Lemon Drizzle Cake</span>
+                <span class="dish__lead"></span>
+                <span class="dish__price">3.40</span>
+              </div>
+              <p class="dish__desc">A moist slice with a tangy lemon glaze.</p>
+            </li>
+            <li class="dish">
+              <div class="dish__row">
+                <span class="dish__name">Victoria Sponge</span>
+                <span class="dish__lead"></span>
+                <span class="dish__price">3.40</span>
+              </div>
+              <p class="dish__desc">Raspberry jam and buttercream, classic and simple.</p>
+            </li>
+            <li class="dish">
+              <div class="dish__row">
+                <span class="dish__name">Chocolate Brownie</span>
+                <span class="dish__lead"></span>
+                <span class="dish__price">3.20</span>
+              </div>
+              <p class="dish__desc">Fudgy and rich, served warm on request.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="menu__foot reveal">
+        <span class="mono">☞</span> Example dishes and prices shown for now — please let us know about allergies.
+      </p>
+    </section>
+
+    <!-- ░░ Gallery (our own photos) ░░ -->
+    <section class="gallery" id="gallery" aria-label="Photos">
+      <header class="gallery__head">
+        <p class="eyebrow reveal"><span class="mono">◎</span> <span data-gallery-eyebrow>From the kitchen</span></p>
+        <h2 class="reveal">A look inside</h2>
+      </header>
+      <div class="gallery__grid" data-photos-grid>
+        <!-- photos injected by main.js from photos.data.js -->
+      </div>
+      <p class="gallery__attrib" data-gallery-attrib hidden>Photos from Google</p>
+    </section>
+
+    <!-- ░░ Contact ░░ -->
+    <section class="visit" id="contact">
+      <div class="visit__head">
+        <p class="eyebrow reveal"><span class="eyebrow__leaf" aria-hidden="true">❧</span> Contact</p>
+        <h2 class="reveal">Come for lunch, stay past dark.</h2>
+      </div>
+
+      <div class="visit__grid">
+        <div class="visit__card reveal">
+          <h3><span class="mono">☎</span> Get in Touch</h3>
+          <p class="visit__soft">
+            We're walk-ins only — no booking needed, just come on by. Give us a ring
+            if you've a question, or you're planning a bigger group.
+          </p>
+          <a class="visit__big" href="tel:+447795574768">07795 574768</a>
+          <a class="visit__big visit__big--alt" href="mailto:info@theparkbistro.com">info@theparkbistro.com</a>
+        </div>
+
+        <div class="visit__card reveal">
+          <h3><span class="mono">◷</span> Hours</h3>
+          <ul class="hours">
+            <li><span>Monday</span><span class="hours__val">5:30–7:30</span></li>
+            <li><span>Tuesday &amp; Wednesday</span><span class="hours__val">Closed</span></li>
+            <li><span>Thursday</span><span class="hours__val">10–3 · 5–8</span></li>
+            <li><span>Friday</span><span class="hours__val">10–8</span></li>
+            <li><span>Saturday</span><span class="hours__val">10–4</span></li>
+            <li><span>Sunday</span><span class="hours__val">10–2</span></li>
+          </ul>
+          <p class="visit__soft">Hours can shift with the seasons — do check before a special trip.</p>
+        </div>
+
+        <div class="visit__card reveal">
+          <h3><span class="mono">✦</span> Find us</h3>
+          <address class="visit__addr">
+            79a Long Ln<br />
+            Attenborough, Nottingham NG9 6BN
+          </address>
+          <p class="visit__soft">
+            A short walk from Attenborough Nature Reserve, just off Long Lane.
+          </p>
+          <a class="visit__link" href="https://maps.google.com/?cid=6841481098849020407" target="_blank" rel="noopener">Open in maps →</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ░░ Footer ░░ -->
+  <footer class="site-foot">
+    <div class="site-foot__brand">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 21c0-6 0-9 0-12" />
+          <path d="M12 12c4-1 6-4 6-8-4 0-6 3-6 8Z" />
+          <path d="M12 15c-3-.8-4.6-3-4.6-6C10.4 9 12 11.2 12 15Z" />
+        </svg>
+      </span>
+      <p class="site-foot__word">The Park Bistro</p>
+      <p class="site-foot__tag">A seasonal table at the edge of the reserve.</p>
+    </div>
+
+    <div class="site-foot__cols">
+      <div>
+        <p class="mono site-foot__label">Visit</p>
+        <p>79a Long Ln<br />Attenborough, Nottingham NG9 6BN</p>
+      </div>
+      <div>
+        <p class="mono site-foot__label">Reach us</p>
+        <p><a href="tel:+447795574768">07795 574768</a><br /><a href="mailto:info@theparkbistro.com">info@theparkbistro.com</a></p>
+      </div>
+      <div>
+        <p class="mono site-foot__label">Elsewhere</p>
+        <div class="site-foot__social">
+          <a class="site-foot__social-link" href="https://www.instagram.com/the.parkbistro/?hl=en" target="_blank" rel="noopener" aria-label="The Park Bistro on Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5.5" />
+              <circle cx="12" cy="12" r="4.2" />
+              <circle cx="17.3" cy="6.7" r="0.9" fill="currentColor" stroke="none" />
+            </svg>
+          </a>
+          <a class="site-foot__social-link" href="https://www.facebook.com/theparkbistrosecretconker/" target="_blank" rel="noopener" aria-label="The Park Bistro on Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M14.5 21v-7.6h2.55l.38-2.96h-2.93V8.55c0-.86.24-1.44 1.47-1.44h1.57V4.46c-.27-.04-1.2-.12-2.29-.12-2.26 0-3.81 1.38-3.81 3.92v2.18H8.98v2.96h2.46V21h3.06Z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <p class="site-foot__fine">
+      <span>© <span id="year">2026</span> The Park Bistro</span>
+      <span class="mono">52.91°N / 1.23°W</span>
+    </p>
+  </footer>
+
+  <script src="assets/js/reviews.data.js"></script>
+  <script src="assets/js/photos.data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
