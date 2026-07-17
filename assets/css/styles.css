@@ -98,7 +98,7 @@ h1, h2, h3 { font-family: var(--display); font-weight: 400; letter-spacing: 0; l
 .btn:hover { transform: translateY(-2px); }
 .btn--solid { background: var(--sage-deep); color: var(--white); }
 .btn--solid:hover { background: #5C3D1A; }
-.btn--ghost { border-color: var(--ink); color: var(--ink); }
+.btn--ghost { background: var(--white); border-color: var(--ink); color: var(--ink); }
 .btn--ghost:hover { border-color: var(--sage-deep); background: var(--sage-deep); color: var(--white); }
 
 /* =====================================================================
